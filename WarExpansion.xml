@@ -19,8 +19,8 @@ snd.message("Current Division is "..matches[2], "atk")</script>
 			<Alias isActive="yes" isFolder="no">
 				<name>March Troops</name>
 				<script>snd.send("order "..snd.current_division.." march " .. matches[2])
-snd.send("qeb " .. matches[2])
-snd.send("path find "..snd.marching_destination)</script>
+snd.send("qeb " .. matches[2]..snd.sep.."path find "..snd.marching_destination)
+</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^mt (\w+)$</regex>
